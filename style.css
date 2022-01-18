@@ -95,7 +95,6 @@ header label span {
   padding: 0.5rem;
   border: none;
   outline: none;
-  width: 400px;
 }
 .user-wrapper {
   display: flex;
@@ -110,8 +109,33 @@ header label span {
   color: var(--text-grey);
 }
 main {
-  margin-top: 90px;
+  position: absolute;
+  top: 83px;
   padding: 2rem 1.5rem;
   background-color: #f1f5f9;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 83px);
+  min-width: calc(100% - 345px);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+}
+.card-single {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2px;
+}
+.card-single h1 + span {
+  color: var(--text-grey);
+}
+.card-single div:last-child span {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+.card-single div:first-of-type span {
+  color: var(--text-grey);
 }
