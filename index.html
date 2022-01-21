@@ -12,9 +12,10 @@
     <title>Dashboard Design</title>
   </head>
   <body>
+    <input type="checkbox" id="nav-toggle" />
     <div class="sidebar">
       <div class="sidebar-brand">
-        <h2><span class="lab la-accusoft"></span>Accusoft</h2>
+        <h2><span class="lab la-accusoft"></span><span>Accusoft</span></h2>
       </div>
       <div class="sidebar-menu">
         <ul>
@@ -60,7 +61,7 @@
     <div class="main-content">
       <header>
         <h2>
-          <label for="">
+          <label for="nav-toggle">
             <span class="las la-bars"></span>
           </label>
           Dashboard
@@ -127,91 +128,93 @@
                 </button>
               </div>
               <div class="card-body">
-                <table width="100%">
-                  <thead>
-                    <tr>
-                      <td>Project Title</td>
-                      <td>Department</td>
-                      <td>Status</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>UI/UX Design</td>
-                      <td>UI Team</td>
-                      <td>
-                        <span class="status purple"></span>
-                        review
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Web Development</td>
-                      <td>Frontend</td>
-                      <td>
-                        <span class="status pink"></span>
-                        In Progress
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ushop app</td>
-                      <td>Mobile Team</td>
-                      <td>
-                        <span class="status orange"></span>
-                        Pending
-                      </td>
-                    </tr>
+                <div class="table-responsive">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <td>Project Title</td>
+                        <td>Department</td>
+                        <td>Status</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td>
+                          <span class="status purple"></span>
+                          review
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td>
+                          <span class="status pink"></span>
+                          In Progress
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ushop app</td>
+                        <td>Mobile Team</td>
+                        <td>
+                          <span class="status orange"></span>
+                          Pending
+                        </td>
+                      </tr>
 
-                    <tr>
-                      <td>UI/UX Design</td>
-                      <td>UI Team</td>
-                      <td>
-                        <span class="status purple"></span>
-                        review
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Web Development</td>
-                      <td>Frontend</td>
-                      <td>
-                        <span class="status pink"></span>
-                        In Progress
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ushop app</td>
-                      <td>Mobile Team</td>
-                      <td>
-                        <span class="status orange"></span>
-                        Pending
-                      </td>
-                    </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td>
+                          <span class="status purple"></span>
+                          review
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td>
+                          <span class="status pink"></span>
+                          In Progress
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ushop app</td>
+                        <td>Mobile Team</td>
+                        <td>
+                          <span class="status orange"></span>
+                          Pending
+                        </td>
+                      </tr>
 
-                    <tr>
-                      <td>UI/UX Design</td>
-                      <td>UI Team</td>
-                      <td>
-                        <span class="status purple"></span>
-                        review
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Web Development</td>
-                      <td>Frontend</td>
-                      <td>
-                        <span class="status pink"></span>
-                        In Progress
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ushop app</td>
-                      <td>Mobile Team</td>
-                      <td>
-                        <span class="status orange"></span>
-                        Pending
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td>
+                          <span class="status purple"></span>
+                          review
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td>
+                          <span class="status pink"></span>
+                          In Progress
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ushop app</td>
+                        <td>Mobile Team</td>
+                        <td>
+                          <span class="status orange"></span>
+                          Pending
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -226,143 +229,101 @@
 
               <div class="card-body">
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
                 <div class="customer">
-                  <div>
+                  <div class="info">
                     <img src="img/user.png" width="40px" height="40px" alt="" />
                     <div>
                       <h4>Jalish M. Mahmud</h4>
                       <small>CEO Excerpt</small>
                     </div>
                   </div>
-                  <div>
+                  <div class="contact">
                     <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
-                  </div>
-                </div>
-                <div class="customer">
-                  <div>
-                    <img src="img/user.png" width="40px" height="40px" alt="" />
-                    <div>
-                      <h4>Jalish M. Mahmud</h4>
-                      <small>CEO Excerpt</small>
-                    </div>
-                  </div>
-                  <div>
-                    <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
-                  </div>
-                </div>
-                <div class="customer">
-                  <div>
-                    <img src="img/user.png" width="40px" height="40px" alt="" />
-                    <div>
-                      <h4>Jalish M. Mahmud</h4>
-                      <small>CEO Excerpt</small>
-                    </div>
-                  </div>
-                  <div>
-                    <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
-                  </div>
-                </div>
-                <div class="customer">
-                  <div>
-                    <img src="img/user.png" width="40px" height="40px" alt="" />
-                    <div>
-                      <h4>Jalish M. Mahmud</h4>
-                      <small>CEO Excerpt</small>
-                    </div>
-                  </div>
-                  <div>
-                    <span class="las la-user-circle"></span>
-                    <span class="las la-user-comment"></span>
-                    <span class="las la-user-phone"></span>
+                    <span class="las la-comment"></span>
+                    <span class="las la-phone"></span>
                   </div>
                 </div>
               </div>

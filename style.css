@@ -22,6 +22,7 @@
   height: 100%;
   background-color: var(--main-color);
   z-index: 100;
+  transition: width 300ms;
 }
 .sidebar-brand {
   height: 90px;
@@ -57,10 +58,39 @@
   font-size: 1.5rem;
   padding-right: 1rem;
 }
+#nav-toggle:checked + .sidebar {
+  width: 70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+  padding-left: 1rem;
+  text-align: center;
+}
+#nav-toggle:checked + .sidebar li a {
+  padding-left: 0rem;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child {
+  display: none;
+}
+#nav-toggle:checked ~ .main-content {
+  margin-left: 70px;
+}
+#nav-toggle:checked ~ .main-content header {
+  width: calc(100% - 70px);
+  left: 70px;
+}
+#nav-toggle:checked ~ .main-content main {
+  width: calc(100% - 70px);
+  left: 70px;
+}
+
 .main-content {
+  transition: margin-left 300ms;
   margin-left: 345px;
 }
 header {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -69,6 +99,10 @@ header {
   left: 345px;
   width: calc(100% - 345px);
   z-index: 100;
+  transition: left 300ms;
+}
+#nav-toggle {
+  display: none;
 }
 header h2 {
   color: #222;
@@ -111,10 +145,12 @@ header label span {
 main {
   position: absolute;
   top: 83px;
+  left: 345px;
   padding: 2rem 1.5rem;
   background-color: #f1f5f9;
   min-height: calc(100vh - 83px);
-  min-width: calc(100% - 345px);
+  width: calc(100% - 345px);
+  transition: left 300ms;
 }
 .cards {
   display: grid;
@@ -152,7 +188,7 @@ main {
   margin-top: 3.5rem;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 67% auto;
+  grid-template-columns: 62% auto;
 }
 .card {
   background: #fff;
@@ -180,7 +216,7 @@ table {
   border-collapse: collapse;
 }
 thead tr {
-  border-top: 1px solid #f0f0f0;
+  /* border-top: 1px solid #f0f0f0; */
   border-bottom: 2px solid #f0f0f0;
 }
 thead td {
@@ -210,4 +246,37 @@ tr td:last-child {
 }
 .status.orange {
   background-color: orangered;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.info h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #222;
+}
+.info small {
+  font-weight: 600;
+  color: var(--text-grey);
+}
+.contact span {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--main-color);
 }
